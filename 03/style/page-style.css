@@ -1,0 +1,74 @@
+#super{
+    background-color: yellow;
+    color: black;
+}
+p{
+    color:red;
+    background-color: black;
+}
+p{
+    background-color: orchid;
+    color: black;
+}
+p{
+    background-color: rgb(5, 170, 148);
+    color: black;
+}
+p.more.big{
+    background-color: orange;
+}
+.more{
+    background-color: green;
+    color:white;
+}
+.big{
+    font-size: 30px;
+}
+.block-element{
+    background-color: rgb(5, 156, 5);
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 50px;
+    position: relative;    
+}
+/* h3, h4, .test{
+
+} */
+h3{
+    border: 3px solid black;
+}
+h4{
+    border: 4ps solid yellow;
+}
+.test{
+    border: 10px solid gray;
+}
+
+p span{
+    color: blueviolet;
+}
+span{
+    color: green;
+}
+/* DRY don't repeat yourself */
+
+ul li{
+    background-color: blue;
+    color: yellow;
+}
+ul li:first-child{
+    background-color: black;
+}
+ul li:last-child{
+    background-color: gray;
+}
+ul li:nth-child(4){
+    background-color: #132a12;;
+}
+.paint{
+    background-color: rgba(226, 17, 111, 0.5);
+    /* 0 - 0.5 -1  */
+}
+*{
+    /* text-decoration: underline; */
+}

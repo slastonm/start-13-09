@@ -1,0 +1,13 @@
+h1{
+    /* text-align: left; */
+    text-align: center;
+    /* text-align: right; */
+    /* text-align: justify; */
+}
+div{
+    text-align: center;
+}
+a{
+    font-size: 30px;
+    color:#000000;
+}

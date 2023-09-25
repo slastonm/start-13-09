@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #CCA5A5;
+}
+section{
+    border-radius: 20px;
+    background: #FFF;
+    width: 360px;
+    margin: 50px auto;
+}
+h1{
+    margin: 5px;
+}

@@ -1,0 +1,45 @@
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+
+.clear::before,
+.clear::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.wrapper{
+    width: 400px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    float: left;
+}
+nav{
+    text-align: center;
+    background-color: red;
+    float: right;
+}
+.logo, nav{
+    /* display: inline-block; */
+    /* vertical-align: top; */
+}
+.float-text{
+    /* display: inline-block; */
+}
+img{
+    float: right;
+    margin: 40px;
+}

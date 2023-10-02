@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.bg{
+    width: 800px;
+    margin: 0 auto;
+    height: 600px;
+    padding: 200px 10px;
+    background-color: yellow;
+    /* background-image: url('../img/avatar.png'), url('../img/1.webp'); */
+    background-image: url('../img/avatar.png');
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x; */
+    background-repeat: repeat-y;
+
+
+    /* background-position: top center; */
+    /* background-position: bottom center; */
+    background-position: center center;
+    /* background-position: top 50px left 50px; */
+    /* background-size: 100px 200px; */
+    /* background-size: contain; */
+    background-size: cover;
+}
+.bg:hover{
+    background-color: red;
+}
+
+.fb{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/sprite-icon-29.jpg');
+    background-position: top 235px left -16px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+}
+.fb:hover{
+    background-position: top 151px left -16px;
+}
+.fb.active{
+    background-position: top 151px left -16px;
+}
+.fb.disabled{
+    background-position: top 67px left -16px;
+}

@@ -1,0 +1,19 @@
+@import url(reset.css);
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
+    background-image: url('../img/Rectangle1.png');
+    background-color: black;
+    min-height: 117px;
+    /* background-size: ; */
+    /* background-position: ; */
+}
+/* font-family: 'Inter', sans-serif;
+font-family: 'Young Serif', serif; */
+main{
+    width: 88%;
+    margin: 0 auto;
+}

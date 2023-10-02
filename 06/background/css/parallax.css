@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+main{
+    padding-top: 150px;
+    background-image: url('../img/bg.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100%;
+}
+header, section{
+    margin-bottom: 200px;
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+}

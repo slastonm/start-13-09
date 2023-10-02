@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: yellow;
+}
+.wrapper{
+    /* width: 960px; */
+    background-color: blue;
+    width: 88%;
+    /* min-width: 1000px; */
+    /* max-width: 1600px; */
+
+    margin: 0 auto;
+    border: 2px solid red;
+
+}
+.test{
+    padding: 10px;
+    background-color: gray;
+    width: 58%;
+    min-height: 100px;
+    max-height: 300px;
+    font-size: 30px;
+    overflow: scroll;
+}

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: gray;
+}
+header{
+    background-color: green;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo,
+.search{
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+nav a{
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 20px;
+    color: #fff;
+}
+nav a:last-child{
+    margin-right: 0;
+}
+
+/* @media screen and (max-width:1080px) {
+    body{
+        background-color: black;
+    }
+    header{
+        padding: 25px 0;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body{
+        background-color: rgb(223, 16, 16);
+    }
+    header{
+        background-color: black;
+        padding: 15px 0;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        align-items: center;
+        order: 1;
+    }
+    .logo{
+        order: 2;
+    }
+    .search{
+        order: 3;
+    }
+    nav a{
+        margin-right: 0;
+    }
+} */
+
+@media (min-width:600px){
+    header{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: orange;
+    }
+}
+@media (min-width:900px){
+    header{
+        padding: 80px 0;
+        background-color: rgb(91, 61, 4);
+    }
+}
+
+/* @media screen and (min-width:1000px) and (max-width:1400px){
+    header{
+        background-color: rgb(177, 8, 146);
+    }
+} */
+
+@media (1200px <= width <= 1400px){
+    header{
+        display: none;
+        background-color: rgb(177, 8, 146);
+    }
+}
+@media (1200px <= width <= 1400px){
+    header{
+        display: flex;
+        opacity: 0.1;
+        background-color: rgb(177, 8, 146);
+    }
+}
+
+@media (min-aspect-ratio: 8/5) {
+    div {
+      background: #9af; /* blue */
+    }
+}
+
+@media (max-aspect-ratio: 3/2) {
+    div {
+        background: #9ff;  /* cyan */
+    }
+}
+.img-block{
+    width: 20%;
+    border: 3px solid red;
+}
+.img-block>img{
+    width: 100%;
+}

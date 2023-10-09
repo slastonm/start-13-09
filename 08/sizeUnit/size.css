@@ -1,0 +1,126 @@
+:root{
+    --main-Background: black;
+    --main-text-color:white;
+    /* --text-white:yellow; */
+    --base-font-size:24px;
+    --main-font-family:'Pixelify Sans', cursive; 
+/* font-family: 'Pixelify Sans', cursive; */
+}
+
+
+/* font-family: 'Roboto', sans-serif; */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 50px; */
+    background-color: orange;
+    min-height:100vh;
+    /* width: 40%; */
+    margin: 0 auto;
+    /* height: 100vh; */
+    /* vh */
+    /* font-size: 3vw; */
+}
+section:nth-child(2){
+    background-color: blueviolet;
+}
+.img-block{
+    /* vw */
+    width: 50%;
+    /* width: 50vw; */
+    height: 100px;
+    /* padding: 100px; */
+    background-color: black;
+}
+
+/* @media (max-width:600px){
+    section{
+        font-size: 5vw;
+    }
+} */
+h1, h2, .test{
+    background-color: rgb(242, 7, 7);
+
+}
+h1{
+    background-color: var(--main-Background);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    font-size: var(--base-font-size);
+}
+h2{
+    background-color: var(--main-Background);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+
+
+}
+.test{
+    background-color: var(--main-Background);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+
+
+}
+.test.modify{
+    --main-font-family: 'Roboto', sans-serif; 
+    --main-Background:yellow;
+    --main-text-color: black;
+    --base-font-size: 30px;
+    background-color: var(--main-Background);
+    color: var(--main-text-color);
+    font-family: var(--main-font-family);
+    font-size: var(--base-font-size);
+
+}
+/* em
+rem */
+
+html,body{
+    font-size: 10px;
+}
+/* 1em = root-font-size * 1; */
+h1{
+    /* font-size: 4em;  */
+    font-size: 4rem; 
+    padding: 10em;
+}
+
+
+@media (max-width:600px){
+    html,body{
+        font-size: 5px;
+    }
+    :root{
+        --main-Background: rgb(81, 67, 67);
+        --main-text-color:rgb(238, 238, 12);
+    }
+}
+@media (max-width:400px){
+    html,body{
+        font-size: 5px;
+    }
+    :root{
+        --main-Background: rgb(30, 131, 239);
+        --main-text-color:rgb(157, 227, 4);
+        /* --text-white:yellow; */
+        --base-font-size:18px;
+        --main-font-family: 'Roboto', sans-serif; 
+    /* font-family: 'Pixelify Sans', cursive; */
+    }
+    .test.modify{
+        --main-font-family: 'Pixelify Sans', cursive;; 
+        --main-Background:rgb(8, 162, 8);
+        --main-text-color: black;
+        --base-font-size: 20px;
+    }
+}

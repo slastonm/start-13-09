@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+@keyframes simple-animation {
+    from{
+        background-color: rgb(18, 34, 2);
+        border-radius: 100px;
+    }
+    to{
+        background-color: lawngreen;
+        border-radius: 0;
+    }
+}
+@keyframes hard {
+    0%{
+        background-color: rgb(18, 34, 2);
+        border-radius: 100px;
+        top: 0;
+        left: 0;
+        opacity: 0.1;
+    }
+    20%{
+        background-color: rgb(195, 9, 123);
+        border-radius: 50px;
+        top: 0;
+        left: 400px;
+        opacity: 0.2;
+
+    }
+    40%{
+        background-color: rgb(229, 67, 13);
+        border-radius: 0px;
+        top: 400px;
+        left: 400px;
+        opacity: 0.4;
+
+    }
+    50%{
+        background-color: rgb(69, 120, 18);
+        border-radius: 80px;
+        top: 400px;
+        left: 0;
+        opacity: 0.6;
+
+    }
+    100%{
+        background-color: lawngreen;
+        border-radius: 0;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+}
+
+
+
+.simple{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    padding: 100px;
+    background-color: lawngreen;
+    border-radius: 0;
+    /* animation-name: simple-animation; */
+    animation-name: hard;
+    animation-duration: 10s;
+    /* animation-iteration-count: 3; */
+    animation-iteration-count: infinite;
+    /* animation-timing-function: linear;
+    animation-timing-function: ease;
+    animation-timing-function: ease-in; */
+    animation-timing-function: ease-out;
+
+
+
+
+}
+
+.simple:nth-child(2){
+    animation-delay: 3s;
+    animation-direction: reverse;
+    animation-timing-function: ease-in;
+
+}

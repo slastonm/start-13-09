@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+@keyframes move-item{
+    from{
+        left: 0;
+        background-color: white;
+    }
+    to{
+        left: 1900px;
+        background-color: black;
+    }
+}
+.animate-item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 30px;
+    color: brown;
+    border: 1px solid black;
+    background-color: yellow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-name: move-item;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.linear {animation-timing-function: linear}
+.ease {animation-timing-function: ease;}
+.ease-in {animation-timing-function: ease-in;}
+.ease-out {animation-timing-function: ease-out;}
+.ease-in-out {animation-timing-function: ease-in-out;}
+.custom{
+    animation-timing-function: cubic-bezier(.68,-0.01,1,-0.02);
+}
+.custom-too{
+    animation-timing-function: cubic-bezier(0,.97,.03,.99);
+}
+.hover-btn{
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+    margin: 150px 50px;
+    display: inline-block;
+    padding: 20px 40px;
+    transition: all 5s;
+    /* transition-delay: 2s; */
+}
+span{
+    color:black;
+    transition: all 7s;
+}
+.hover-btn:hover{
+    background-color: red;
+    color:white;
+    border-radius: 10px;
+    /* transform: ; */
+    /* rotate: 20deg; */
+    /* rotate: 90deg; */
+    /* rotate: -45deg; */
+    /* scale: 1.2 0.5; */
+    /* scale: 0.5; */
+    /* transform: translate(-30px, -20px); */
+    transform: skew(10deg, 45deg);
+
+}
+.hover-btn:hover span{
+    color:yellow;
+}
+.svg-icon{
+    width: 100px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+.cross{
+    fill: red;
+    stroke:gold;
+    stroke-width: 3px;
+    transition: all 3s;
+}
+.cross:hover{
+    fill: rgb(247, 245, 245);
+    stroke:rgb(228, 44, 11);
+    stroke-width: 1px;
+    rotate: 18deg;
+}
